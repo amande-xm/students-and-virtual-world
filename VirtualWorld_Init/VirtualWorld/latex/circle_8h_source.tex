@@ -1,0 +1,27 @@
+\hypertarget{circle_8h_source}{}\doxysection{circle.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <QPointF>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QGraphicsItem>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QRandomGenerator>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QColor>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}shape.h"{}}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QPen>}}
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{class }\mbox{\hyperlink{classCircle}{Circle}} : \textcolor{keyword}{public} \mbox{\hyperlink{classShape}{Shape}}}
+\DoxyCodeLine{11 \{}
+\DoxyCodeLine{12 \textcolor{keyword}{private}:}
+\DoxyCodeLine{13     \textcolor{keywordtype}{double} radius;}
+\DoxyCodeLine{14 \textcolor{keyword}{public}:}
+\DoxyCodeLine{15     \mbox{\hyperlink{classCircle}{Circle}}();}
+\DoxyCodeLine{16     \mbox{\hyperlink{classCircle}{Circle}}(QPointF p, \textcolor{keywordtype}{double} radius, QColor c = QColor::fromRgb(QRandomGenerator::global()-\/>generate()));}
+\DoxyCodeLine{17     QGraphicsItem* getGraphicsItem() \textcolor{keyword}{override};}
+\DoxyCodeLine{18     \textcolor{keywordtype}{void} add(QVector<Shape*>\&)\textcolor{keyword}{ override }\{\}}
+\DoxyCodeLine{19     QString type() \textcolor{keyword}{const override};}
+\DoxyCodeLine{20 \};}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 }
+
+\end{DoxyCode}

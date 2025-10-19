@@ -1,0 +1,32 @@
+\hypertarget{shapemanager_8h_source}{}\doxysection{shapemanager.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}shape.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}circle.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}observer.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QVector>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QPointF>}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{classShapeManager}{ShapeManager}} : \textcolor{keyword}{public} \mbox{\hyperlink{classObservable}{Observable}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14 \textcolor{keyword}{private}:}
+\DoxyCodeLine{15 }
+\DoxyCodeLine{20     QVector<Shape*> shapes;}
+\DoxyCodeLine{21 }
+\DoxyCodeLine{22 \textcolor{keyword}{public}:}
+\DoxyCodeLine{23     \mbox{\hyperlink{classShapeManager}{ShapeManager}}();}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} \mbox{\hyperlink{classShapeManager_ae2b8a13955eee30cf0329a3f52e977d6}{add}}(\mbox{\hyperlink{classShape}{Shape}}* shape);}
+\DoxyCodeLine{31 }
+\DoxyCodeLine{38     \textcolor{keywordtype}{void} \mbox{\hyperlink{classShapeManager_a7b8ddb2e7235e4c7b9708ad75682792f}{moveShape}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id},QPointF pos);}
+\DoxyCodeLine{39 }
+\DoxyCodeLine{45     \textcolor{keywordtype}{void} \mbox{\hyperlink{classShapeManager_a7acb64b5ddad1db26deecca7c5a3a636}{removeShape}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{46 }
+\DoxyCodeLine{52     \mbox{\hyperlink{classShape}{Shape}}* \mbox{\hyperlink{classShapeManager_aac6be26e19844cc8ed50f3333536d880}{getShape}}(\textcolor{keywordtype}{int} \textcolor{keywordtype}{id});}
+\DoxyCodeLine{53 }
+\DoxyCodeLine{58     \textcolor{keyword}{const} QVector<Shape*>\& \mbox{\hyperlink{classShapeManager_a7be91e01ded500d6d67e5f6564bef3f7}{getShapes}}()\textcolor{keyword}{ const }\{\textcolor{keywordflow}{return} shapes;\}}
+\DoxyCodeLine{59 \};}
+\DoxyCodeLine{60 }
+
+\end{DoxyCode}

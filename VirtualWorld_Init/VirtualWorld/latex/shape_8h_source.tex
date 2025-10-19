@@ -1,0 +1,30 @@
+\hypertarget{shape_8h_source}{}\doxysection{shape.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <QPointF>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QGraphicsItem>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QRandomGenerator>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QColor>}}
+\DoxyCodeLine{6 }
+\DoxyCodeLine{7 \textcolor{keyword}{class }\mbox{\hyperlink{classShape}{Shape}}}
+\DoxyCodeLine{8 \{}
+\DoxyCodeLine{9 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{10     QPointF pos; \textcolor{comment}{// center of the shape}}
+\DoxyCodeLine{11     QColor col; \textcolor{comment}{// color of the shape}}
+\DoxyCodeLine{12     \textcolor{keywordtype}{int} id; \textcolor{comment}{// its id}}
+\DoxyCodeLine{13     \textcolor{keyword}{static} \textcolor{keywordtype}{int} current\_id; \textcolor{comment}{// number of shapes already created => next id}}
+\DoxyCodeLine{14 }
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{classShape}{Shape}}();}
+\DoxyCodeLine{17     \mbox{\hyperlink{classShape}{Shape}}(QPointF, QColor c = QColor::fromRgb(QRandomGenerator::global()-\/>generate()));}
+\DoxyCodeLine{18     \textcolor{keyword}{virtual} QGraphicsItem* getGraphicsItem()=0;}
+\DoxyCodeLine{19     \textcolor{keyword}{virtual} \textcolor{keywordtype}{void} add(QVector<Shape*>\& v) = 0;}
+\DoxyCodeLine{20     \textcolor{keyword}{virtual} QString type() \textcolor{keyword}{const}=0;}
+\DoxyCodeLine{21     \textcolor{keywordtype}{void} setPos(QPointF newPos);}
+\DoxyCodeLine{22     \textcolor{keywordtype}{void} setCol(\textcolor{keyword}{const} QColor \&newCol);}
+\DoxyCodeLine{23     \textcolor{keywordtype}{int} getId() \textcolor{keyword}{const};}
+\DoxyCodeLine{24     QColor getCol() \textcolor{keyword}{const};}
+\DoxyCodeLine{25 \};}
+
+\end{DoxyCode}

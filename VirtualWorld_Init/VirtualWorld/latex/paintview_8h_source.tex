@@ -1,0 +1,39 @@
+\hypertarget{paintview_8h_source}{}\doxysection{paintview.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}shapemanager.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include "{}controller.h"{}}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QGraphicsView>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QGraphicsScene>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <QTreeWidget>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include <QDebug>}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 }
+\DoxyCodeLine{13 \textcolor{keyword}{class }\mbox{\hyperlink{classPaintView}{PaintView}} : \textcolor{keyword}{public} QGraphicsScene, \textcolor{keyword}{public} \mbox{\hyperlink{classObserver}{Observer}}\textcolor{comment}{//: public QObject}}
+\DoxyCodeLine{14 \{}
+\DoxyCodeLine{15     Q\_OBJECT}
+\DoxyCodeLine{16 \textcolor{keyword}{private}:}
+\DoxyCodeLine{17     \mbox{\hyperlink{classShapeManager}{ShapeManager}}* shapeManager;}
+\DoxyCodeLine{18     QPointF mousePos;}
+\DoxyCodeLine{19     QString toolbox;}
+\DoxyCodeLine{20 }
+\DoxyCodeLine{21 \textcolor{keyword}{public}:}
+\DoxyCodeLine{22     \mbox{\hyperlink{classPaintView}{PaintView}}(\mbox{\hyperlink{classShapeManager}{ShapeManager}}* = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{23     \textcolor{keywordtype}{void} updateModel() \textcolor{keyword}{override};}
+\DoxyCodeLine{24 }
+\DoxyCodeLine{25 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{26     \textcolor{keywordtype}{void} drawForeground(QPainter* painter, \textcolor{keyword}{const} QRectF\& rect) \textcolor{keyword}{override};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{public} slots:}
+\DoxyCodeLine{29     \textcolor{keywordtype}{void} mousePressEvent(QGraphicsSceneMouseEvent* mouseEvent) \textcolor{keyword}{override};}
+\DoxyCodeLine{30     \textcolor{keywordtype}{void} mouseReleaseEvent(QGraphicsSceneMouseEvent* mouseEvent) \textcolor{keyword}{override};}
+\DoxyCodeLine{31     \textcolor{keywordtype}{void} mouseMoveEvent(QGraphicsSceneMouseEvent* mouseEvent) \textcolor{keyword}{override};}
+\DoxyCodeLine{32     \textcolor{keywordtype}{void} groupShapes();}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} removeShapes();}
+\DoxyCodeLine{34 \};}
+
+\end{DoxyCode}

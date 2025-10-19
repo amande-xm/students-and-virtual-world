@@ -1,0 +1,134 @@
+\hypertarget{classShapeManager}{}\doxysection{Shape\+Manager Class Reference}
+\label{classShapeManager}\index{ShapeManager@{ShapeManager}}
+
+
+The \mbox{\hyperlink{classShapeManager}{Shape\+Manager}} class Handles management of the shapes displayed in the \mbox{\hyperlink{classPaintView}{Paint\+View}}.  
+
+
+
+
+{\ttfamily \#include $<$shapemanager.\+h$>$}
+
+
+
+Inheritance diagram for Shape\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classShapeManager__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Shape\+Manager\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=169pt]{classShapeManager__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{classShapeManager_ae2b8a13955eee30cf0329a3f52e977d6}{add}} (\mbox{\hyperlink{classShape}{Shape}} $\ast$shape)
+\begin{DoxyCompactList}\small\item\em add \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShapeManager_a7b8ddb2e7235e4c7b9708ad75682792f}{move\+Shape}} (int id, QPointF pos)
+\begin{DoxyCompactList}\small\item\em move\+Shape \end{DoxyCompactList}\item 
+void \mbox{\hyperlink{classShapeManager_a7acb64b5ddad1db26deecca7c5a3a636}{remove\+Shape}} (int id)
+\begin{DoxyCompactList}\small\item\em remove\+Shape \end{DoxyCompactList}\item 
+\mbox{\hyperlink{classShape}{Shape}} $\ast$ \mbox{\hyperlink{classShapeManager_aac6be26e19844cc8ed50f3333536d880}{get\+Shape}} (int id)
+\begin{DoxyCompactList}\small\item\em get\+Shape \end{DoxyCompactList}\item 
+const QVector$<$ \mbox{\hyperlink{classShape}{Shape}} $\ast$ $>$ \& \mbox{\hyperlink{classShapeManager_a7be91e01ded500d6d67e5f6564bef3f7}{get\+Shapes}} () const
+\begin{DoxyCompactList}\small\item\em get\+Shapes \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Detailed Description}
+The \mbox{\hyperlink{classShapeManager}{Shape\+Manager}} class Handles management of the shapes displayed in the \mbox{\hyperlink{classPaintView}{Paint\+View}}. 
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classShapeManager_ae2b8a13955eee30cf0329a3f52e977d6}\label{classShapeManager_ae2b8a13955eee30cf0329a3f52e977d6}} 
+\index{ShapeManager@{ShapeManager}!add@{add}}
+\index{add@{add}!ShapeManager@{ShapeManager}}
+\doxysubsubsection{\texorpdfstring{add()}{add()}}
+{\footnotesize\ttfamily void Shape\+Manager\+::add (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classShape}{Shape}} $\ast$}]{shape }\end{DoxyParamCaption})}
+
+
+
+add 
+
+
+\begin{DoxyParams}{Parameters}
+{\em shape} & Adds the shape to the QVector \char`\"{}shapes\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShapeManager_aac6be26e19844cc8ed50f3333536d880}\label{classShapeManager_aac6be26e19844cc8ed50f3333536d880}} 
+\index{ShapeManager@{ShapeManager}!getShape@{getShape}}
+\index{getShape@{getShape}!ShapeManager@{ShapeManager}}
+\doxysubsubsection{\texorpdfstring{getShape()}{getShape()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{classShape}{Shape}} $\ast$ Shape\+Manager\+::get\+Shape (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+get\+Shape 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+the shape identified by \char`\"{}id\char`\"{} stored in the QVector \char`\"{}shapes\char`\"{} 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShapeManager_a7be91e01ded500d6d67e5f6564bef3f7}\label{classShapeManager_a7be91e01ded500d6d67e5f6564bef3f7}} 
+\index{ShapeManager@{ShapeManager}!getShapes@{getShapes}}
+\index{getShapes@{getShapes}!ShapeManager@{ShapeManager}}
+\doxysubsubsection{\texorpdfstring{getShapes()}{getShapes()}}
+{\footnotesize\ttfamily const QVector$<$ \mbox{\hyperlink{classShape}{Shape}} $\ast$ $>$ \& Shape\+Manager\+::get\+Shapes (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption}) const\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+get\+Shapes 
+
+\begin{DoxyReturn}{Returns}
+the complete array of shapes in \char`\"{}shapes\char`\"{} created by the user 
+\end{DoxyReturn}
+\mbox{\Hypertarget{classShapeManager_a7b8ddb2e7235e4c7b9708ad75682792f}\label{classShapeManager_a7b8ddb2e7235e4c7b9708ad75682792f}} 
+\index{ShapeManager@{ShapeManager}!moveShape@{moveShape}}
+\index{moveShape@{moveShape}!ShapeManager@{ShapeManager}}
+\doxysubsubsection{\texorpdfstring{moveShape()}{moveShape()}}
+{\footnotesize\ttfamily void Shape\+Manager\+::move\+Shape (\begin{DoxyParamCaption}\item[{int}]{id,  }\item[{QPointF}]{pos }\end{DoxyParamCaption})}
+
+
+
+move\+Shape 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & \\
+\hline
+{\em pos} & Puts the shape obtained by \char`\"{}id\char`\"{} to the new position \char`\"{}pos\char`\"{} \\
+\hline
+\end{DoxyParams}
+\mbox{\Hypertarget{classShapeManager_a7acb64b5ddad1db26deecca7c5a3a636}\label{classShapeManager_a7acb64b5ddad1db26deecca7c5a3a636}} 
+\index{ShapeManager@{ShapeManager}!removeShape@{removeShape}}
+\index{removeShape@{removeShape}!ShapeManager@{ShapeManager}}
+\doxysubsubsection{\texorpdfstring{removeShape()}{removeShape()}}
+{\footnotesize\ttfamily void Shape\+Manager\+::remove\+Shape (\begin{DoxyParamCaption}\item[{int}]{id }\end{DoxyParamCaption})}
+
+
+
+remove\+Shape 
+
+
+\begin{DoxyParams}{Parameters}
+{\em id} & Removes the shape obtained by \char`\"{}id\char`\"{} from the QVector \char`\"{}shapes\char`\"{} \\
+\hline
+\end{DoxyParams}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+shapemanager.\+h\item 
+shapemanager.\+cpp\end{DoxyCompactItemize}

@@ -1,0 +1,47 @@
+\hypertarget{controller_8h_source}{}\doxysection{controller.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include "{}shapemanager.h"{}}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QPointF>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include "{}shapefactory.h"{}}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <iostream>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include <paintview.h>}}
+\DoxyCodeLine{7 \textcolor{preprocessor}{\#include "{}group.h"{}}}
+\DoxyCodeLine{8 \textcolor{preprocessor}{\#include <QColor>}}
+\DoxyCodeLine{9 }
+\DoxyCodeLine{10 \textcolor{keyword}{using namespace }std;}
+\DoxyCodeLine{11 }
+\DoxyCodeLine{12 \textcolor{keyword}{class }\mbox{\hyperlink{classControllerAdd}{ControllerAdd}}}
+\DoxyCodeLine{13 \{}
+\DoxyCodeLine{14     \mbox{\hyperlink{classShapeManager}{ShapeManager}}* shapeManager;}
+\DoxyCodeLine{15 \textcolor{keyword}{public}:}
+\DoxyCodeLine{16     \mbox{\hyperlink{classControllerAdd}{ControllerAdd}}(\mbox{\hyperlink{classShapeManager}{ShapeManager}}* = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{17     \textcolor{keywordtype}{void} control(\textcolor{keywordtype}{int} type, QColor col);}
+\DoxyCodeLine{18 \};}
+\DoxyCodeLine{19 }
+\DoxyCodeLine{20 \textcolor{keyword}{class }\mbox{\hyperlink{classControllerMoveShape}{ControllerMoveShape}}}
+\DoxyCodeLine{21 \{}
+\DoxyCodeLine{22     \mbox{\hyperlink{classShapeManager}{ShapeManager}}* shapeManager;}
+\DoxyCodeLine{23 \textcolor{keyword}{public}:}
+\DoxyCodeLine{24     \mbox{\hyperlink{classControllerMoveShape}{ControllerMoveShape}}(\mbox{\hyperlink{classShapeManager}{ShapeManager}}* = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{25     \textcolor{keywordtype}{void} control(\textcolor{keyword}{const} QVector<QGraphicsItem *> \&);}
+\DoxyCodeLine{26 \};}
+\DoxyCodeLine{27 }
+\DoxyCodeLine{28 \textcolor{keyword}{class }\mbox{\hyperlink{classControllerGroup}{ControllerGroup}}}
+\DoxyCodeLine{29 \{}
+\DoxyCodeLine{30     \mbox{\hyperlink{classShapeManager}{ShapeManager}}* shapeManager;}
+\DoxyCodeLine{31 \textcolor{keyword}{public}:}
+\DoxyCodeLine{32     \mbox{\hyperlink{classControllerGroup}{ControllerGroup}}(\mbox{\hyperlink{classShapeManager}{ShapeManager}}* = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{33     \textcolor{keywordtype}{void} control(QVector<Shape*>\& items);}
+\DoxyCodeLine{34 \};}
+\DoxyCodeLine{35 }
+\DoxyCodeLine{36 \textcolor{keyword}{class }\mbox{\hyperlink{classControllerRemove}{ControllerRemove}}}
+\DoxyCodeLine{37 \{}
+\DoxyCodeLine{38     \mbox{\hyperlink{classShapeManager}{ShapeManager}}* shapeManager;}
+\DoxyCodeLine{39 \textcolor{keyword}{public}:}
+\DoxyCodeLine{40     \mbox{\hyperlink{classControllerRemove}{ControllerRemove}}(\mbox{\hyperlink{classShapeManager}{ShapeManager}}* = \textcolor{keyword}{nullptr});}
+\DoxyCodeLine{41     \textcolor{keywordtype}{void} control(QList <QGraphicsItem*> list);}
+\DoxyCodeLine{42 \};}
+
+\end{DoxyCode}

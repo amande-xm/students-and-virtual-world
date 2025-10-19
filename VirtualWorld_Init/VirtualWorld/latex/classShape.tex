@@ -1,0 +1,63 @@
+\hypertarget{classShape}{}\doxysection{Shape Class Reference}
+\label{classShape}\index{Shape@{Shape}}
+
+
+Inheritance diagram for Shape\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=340pt]{classShape__inherit__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShape_a429ee12e08c7742b485c8a1b41437468}\label{classShape_a429ee12e08c7742b485c8a1b41437468}} 
+{\bfseries Shape} (QPointF, QColor c=QColor\+::from\+Rgb(QRandom\+Generator\+::global() -\/$>$generate()))
+\item 
+\mbox{\Hypertarget{classShape_acba4435ffbe2c54a03d6532c01cc508c}\label{classShape_acba4435ffbe2c54a03d6532c01cc508c}} 
+virtual QGraphics\+Item $\ast$ {\bfseries get\+Graphics\+Item} ()=0
+\item 
+\mbox{\Hypertarget{classShape_a913580d5d437ac1a9c24c6a6dcbdd0da}\label{classShape_a913580d5d437ac1a9c24c6a6dcbdd0da}} 
+virtual void {\bfseries add} (QVector$<$ \mbox{\hyperlink{classShape}{Shape}} $\ast$ $>$ \&v)=0
+\item 
+\mbox{\Hypertarget{classShape_a931920dc4c9faf6b1a62a1344fb9cc18}\label{classShape_a931920dc4c9faf6b1a62a1344fb9cc18}} 
+virtual QString {\bfseries type} () const =0
+\item 
+\mbox{\Hypertarget{classShape_afd708a16b84c846ab51eb81f458cbd99}\label{classShape_afd708a16b84c846ab51eb81f458cbd99}} 
+void {\bfseries set\+Pos} (QPointF new\+Pos)
+\item 
+\mbox{\Hypertarget{classShape_a638c2a2b907d60f4367f70a5e48300f0}\label{classShape_a638c2a2b907d60f4367f70a5e48300f0}} 
+void {\bfseries set\+Col} (const QColor \&new\+Col)
+\item 
+\mbox{\Hypertarget{classShape_a9943196f6a4fb3c9da2a8904c1af9a18}\label{classShape_a9943196f6a4fb3c9da2a8904c1af9a18}} 
+int {\bfseries get\+Id} () const
+\item 
+\mbox{\Hypertarget{classShape_aca161c0cfe9e76547693fe4dd42d998c}\label{classShape_aca161c0cfe9e76547693fe4dd42d998c}} 
+QColor {\bfseries get\+Col} () const
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShape_a8ab41c478f3be2001567d9b5545854a6}\label{classShape_a8ab41c478f3be2001567d9b5545854a6}} 
+QPointF {\bfseries pos}
+\item 
+\mbox{\Hypertarget{classShape_a298a8c3b93ebbb9dc71abe35ab62d76c}\label{classShape_a298a8c3b93ebbb9dc71abe35ab62d76c}} 
+QColor {\bfseries col}
+\item 
+\mbox{\Hypertarget{classShape_a41ed02597b39a932373ab72e9afe4d40}\label{classShape_a41ed02597b39a932373ab72e9afe4d40}} 
+int {\bfseries id}
+\end{DoxyCompactItemize}
+\doxysubsection*{Static Protected Attributes}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classShape_ab902b1a554e7c5181785a2cf26ae4463}\label{classShape_ab902b1a554e7c5181785a2cf26ae4463}} 
+static int {\bfseries current\+\_\+id} =1
+\end{DoxyCompactItemize}
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+shape.\+h\item 
+shape.\+cpp\end{DoxyCompactItemize}

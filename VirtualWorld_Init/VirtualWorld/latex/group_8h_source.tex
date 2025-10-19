@@ -1,0 +1,25 @@
+\hypertarget{group_8h_source}{}\doxysection{group.\+h}
+
+\begin{DoxyCode}{0}
+\DoxyCodeLine{1 \textcolor{preprocessor}{\#pragma once}}
+\DoxyCodeLine{2 \textcolor{preprocessor}{\#include <QPointF>}}
+\DoxyCodeLine{3 \textcolor{preprocessor}{\#include <QGraphicsItem>}}
+\DoxyCodeLine{4 \textcolor{preprocessor}{\#include <QRandomGenerator>}}
+\DoxyCodeLine{5 \textcolor{preprocessor}{\#include <QColor>}}
+\DoxyCodeLine{6 \textcolor{preprocessor}{\#include "{}shape.h"{}}}
+\DoxyCodeLine{7 }
+\DoxyCodeLine{8 }
+\DoxyCodeLine{9 \textcolor{keyword}{class }\mbox{\hyperlink{classGroup}{Group}} : \textcolor{keyword}{public} \mbox{\hyperlink{classShape}{Shape}}}
+\DoxyCodeLine{10 \{}
+\DoxyCodeLine{11 \textcolor{keyword}{protected}:}
+\DoxyCodeLine{12     QVector<Shape*> shapesGroup;}
+\DoxyCodeLine{13 \textcolor{keyword}{public}:}
+\DoxyCodeLine{14     \mbox{\hyperlink{classGroup}{Group}}();}
+\DoxyCodeLine{15     \textcolor{keywordtype}{void} add(QVector<Shape*>\& v);}
+\DoxyCodeLine{16     QGraphicsItem* getGraphicsItem();}
+\DoxyCodeLine{17     QString type() \textcolor{keyword}{const};}
+\DoxyCodeLine{18     QVector<Shape *> getShapesGroup() \textcolor{keyword}{const};}
+\DoxyCodeLine{19 \};}
+\DoxyCodeLine{20 }
+
+\end{DoxyCode}

@@ -1,0 +1,73 @@
+\hypertarget{classPaintView}{}\doxysection{Paint\+View Class Reference}
+\label{classPaintView}\index{PaintView@{PaintView}}
+
+
+Inheritance diagram for Paint\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classPaintView__inherit__graph}
+\end{center}
+\end{figure}
+
+
+Collaboration diagram for Paint\+View\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=256pt]{classPaintView__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsection*{Public Slots}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPaintView_a74425caff8c7ef45ae81e0d3a6750098}\label{classPaintView_a74425caff8c7ef45ae81e0d3a6750098}} 
+void {\bfseries mouse\+Press\+Event} (QGraphics\+Scene\+Mouse\+Event $\ast$mouse\+Event) override
+\item 
+\mbox{\Hypertarget{classPaintView_af988e6b33794c473da073bc3fb922eb9}\label{classPaintView_af988e6b33794c473da073bc3fb922eb9}} 
+void {\bfseries mouse\+Release\+Event} (QGraphics\+Scene\+Mouse\+Event $\ast$mouse\+Event) override
+\item 
+\mbox{\Hypertarget{classPaintView_ab25477b2a62500c014c14acd4fd0f6f4}\label{classPaintView_ab25477b2a62500c014c14acd4fd0f6f4}} 
+void {\bfseries mouse\+Move\+Event} (QGraphics\+Scene\+Mouse\+Event $\ast$mouse\+Event) override
+\item 
+\mbox{\Hypertarget{classPaintView_a8ee111889e6fd9e568e56948578e81d5}\label{classPaintView_a8ee111889e6fd9e568e56948578e81d5}} 
+void {\bfseries group\+Shapes} ()
+\item 
+\mbox{\Hypertarget{classPaintView_a73e5f32f2b9f9fea450e352267b69073}\label{classPaintView_a73e5f32f2b9f9fea450e352267b69073}} 
+void {\bfseries remove\+Shapes} ()
+\end{DoxyCompactItemize}
+\doxysubsection*{Public Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPaintView_a3e2b715a36f0bdb3f8638fd40309f8fc}\label{classPaintView_a3e2b715a36f0bdb3f8638fd40309f8fc}} 
+{\bfseries Paint\+View} (\mbox{\hyperlink{classShapeManager}{Shape\+Manager}} $\ast$=nullptr)
+\item 
+void \mbox{\hyperlink{classPaintView_a7b1ffa94cd3b003dea456c3f6c501673}{update\+Model}} () override
+\end{DoxyCompactItemize}
+\doxysubsection*{Protected Member Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\Hypertarget{classPaintView_a5e06fedc836334f6e83beeea02031135}\label{classPaintView_a5e06fedc836334f6e83beeea02031135}} 
+void {\bfseries draw\+Foreground} (QPainter $\ast$painter, const QRectF \&rect) override
+\end{DoxyCompactItemize}
+
+
+\doxysubsection{Member Function Documentation}
+\mbox{\Hypertarget{classPaintView_a7b1ffa94cd3b003dea456c3f6c501673}\label{classPaintView_a7b1ffa94cd3b003dea456c3f6c501673}} 
+\index{PaintView@{PaintView}!updateModel@{updateModel}}
+\index{updateModel@{updateModel}!PaintView@{PaintView}}
+\doxysubsubsection{\texorpdfstring{updateModel()}{updateModel()}}
+{\footnotesize\ttfamily void Paint\+View\+::update\+Model (\begin{DoxyParamCaption}{ }\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [override]}, {\ttfamily [virtual]}}
+
+
+
+Implements \mbox{\hyperlink{classObserver}{Observer}}.
+
+
+
+The documentation for this class was generated from the following files\+:\begin{DoxyCompactItemize}
+\item 
+paintview.\+h\item 
+paintview.\+cpp\end{DoxyCompactItemize}
