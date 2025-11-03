@@ -11,7 +11,7 @@ These projects were developed as part of a school assignment. The data used was 
 ## Description of projects
 
 
-### Project 1: Students Management – "Gestion Etu"
+### Project 1: Students Management "Gestion Etu"
 This application manages a list of students loaded from a user-provided .csv file. Users can:
 - Add, remove, or modify students in the list
 - View statistics through colorful and interactive charts, such as pie charts and histograms
@@ -21,4 +21,5 @@ An interactive drawing tool that allows users to:
 - Draw basic shapes using the mouse
 - Choose from different shape types
 - Clear the canvas as needed
+- <mark> Doxygen was generated for this project </mark>
 
